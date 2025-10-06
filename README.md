@@ -19,7 +19,7 @@ This project introduces an automated, extensible system that:
 - Detects specific code structures or elements.
 - Generates human-like questions using template-based analyzers.
 
-🧩 System Architecture
+## System Architecture
 
 The system consists of two main components:
 1. Code Analyzers:
@@ -33,21 +33,3 @@ The system consists of two main components:
 - Discuss and provide feedback on generated questions.
 - Upload or contribute new analyzers.
 
-## Methodology
-1. AST Traversal: The system parses each submitted Java program and constructs its Abstract Syntax Tree.
-2. Analyzer Matching: Each analyzer checks if certain elements (e.g., methods, loops, inheritance) exist in the AST.
-3. Question Generation: When an element is detected, the system applies a question template (e.g., “Why did you use a loop here?”).
-4. Customization: Users can create and integrate custom analyzers, while each analyzer is modular and independently loaded as a .jar file.
-
-## Prototype Features
-- Assignment Submission and Review
-- Interactive Question Discussion
-- Custom Analyzer Integration
-- AST-based Pattern Detection
-
-The prototype was tested using the open-source project PlantsVersusZombies as the target codebase.
-
-## Technologies Used
-- For AST Traversal: Spoon & Java
-- Backend: Java Spring Boot
-- Web: NextJS
